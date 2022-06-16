@@ -219,3 +219,13 @@ class Unmined {
     }
 
 }
+
+
+        document.title = UnminedMapProperties.worldName + " - " + document.title;
+
+        if (UnminedCustomMarkers && UnminedCustomMarkers.isEnabled && UnminedCustomMarkers.markers) {
+            UnminedMapProperties.markers = UnminedMapProperties.markers.concat(UnminedCustomMarkers.markers);
+        }
+
+        let unmined = new Unmined();
+        unmined.map('map', UnminedMapProperties, UnminedRegions);
