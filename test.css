@@ -1,0 +1,32 @@
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+            image-rendering: pixelated;
+        }
+
+        .mouseposition {
+            background-color: white;
+            padding: 3px;
+            text-align: right;
+        }
+
+        .mousepositioncoord {
+            min-width: 40px;
+            display: inline-block;
+        }
+
+        div.ol-mouse-position {
+            background-color: white;
+            padding: 6px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+        }
