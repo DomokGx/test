@@ -66,18 +66,6 @@
 <body>
     <div id="map"></div>
 
-    <script type="text/javascript">
-
-        document.title = UnminedMapProperties.worldName + " - " + document.title;
-
-        if (UnminedCustomMarkers && UnminedCustomMarkers.isEnabled && UnminedCustomMarkers.markers) {
-            UnminedMapProperties.markers = UnminedMapProperties.markers.concat(UnminedCustomMarkers.markers);
-        }
-
-        let unmined = new Unmined();
-        unmined.map('map', UnminedMapProperties, UnminedRegions);
-
-    </script>
 </body>
 
 </html>
